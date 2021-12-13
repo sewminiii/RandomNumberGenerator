@@ -12,10 +12,11 @@
             {
                 Console.WriteLine("Enter a random number between 0 - 10 : ");
                 string userNum = Console.ReadLine();
+                int userNumber = Int16.Parse(userNum);
 
-                if (Int16.Parse(userNum) >= 0 && Int16.Parse(userNum) <= 10)
+                if (userNumber >= 0 && userNumber <= 10)
                 {
-                    if (Int16.Parse(userNum) == randomNum)
+                    if (userNumber == randomNum)
                     {
                         Console.WriteLine("CONGRATULATIONS!!!");
                         Console.WriteLine("Your number matches with the random number.");
